@@ -2,10 +2,14 @@
 layout: default
 ---
 <div class="grid-container">
-  <div class="grid-x">
-    <div class="cell">
+  <div class="grid-x grid-margin-y grid-padding-y">
+    <div class="cell medium-8 medium-offset-2">
+      <article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
       <!-- <h1>Morning Notes {{ page.title | escape }}</h1> -->
+      <div class="post-content e-content" itemprop="articleBody"></div>
         {{ content }}
+      </article>
+      </div>
     </div>
   </div>
 </div>
