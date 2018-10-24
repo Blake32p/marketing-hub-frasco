@@ -1,0 +1,31 @@
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea,
+select {
+    border: none;
+    box-shadow: $global-card-shadow;
+    &:hover, &:focus {
+        transition: box-shadow 0.5s ease;
+        box-shadow: $global-card-shadow-hover;
+        border: none;
+    }
+    &:focus {
+        // border: 1px solid rgba($light-gray, .5);
+        // border: 1px solid rgba($warning-color, 0.2);
+        border: none;
+        box-shadow: $global-card-shadow-hover;
+        outline: rgba($secondary-color, 0.1) auto 3px;
+    }
+}

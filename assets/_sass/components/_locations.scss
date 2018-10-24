@@ -1,0 +1,46 @@
+.location-details-container {
+    .location-details {
+        .grid-x {
+            padding: $global-padding;
+            ul {
+                margin-left: 0;
+                margin-bottom: 0;
+                li {
+                    list-style-type: none;
+                }
+            }
+        }
+    }
+
+    .google-map {
+        height: 144px;
+
+        @include breakpoint(medium) {
+            height: 220px;
+        }
+
+        @include breakpoint(large) {
+            height: 250px;
+        }
+
+        @include breakpoint(xlarge) {}
+
+    }
+
+    .location-thumb-img-container {
+        .location-thumb-img {
+            background-size: cover;
+            background-position: center center;
+            height: 80px;
+            border-radius: $global-radius;
+
+            @include breakpoint(medium) {
+                height: 150px;
+            }
+
+            @include breakpoint(large) {
+                height: 110px;
+            }
+        }
+    }
+}

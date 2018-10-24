@@ -1,0 +1,15 @@
+.tabs {
+    border-top-left-radius: $global-radius;
+    border-top-right-radius: $global-radius;
+    .tabs-title {
+        font-weight: $global-weight-bold;
+        color: $secondary-color;
+        a {
+            font-size: $global-font-size;
+        }
+    }
+}
+.tabs-content {
+    border-bottom-left-radius: $global-radius;
+    border-bottom-right-radius: $global-radius;
+}

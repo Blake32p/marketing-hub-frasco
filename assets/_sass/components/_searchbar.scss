@@ -1,0 +1,22 @@
+#searchbar {
+    background-color: $light-gray;
+    margin-top: 12px;
+    margin-bottom: $global-margin;
+    @include breakpoint(medium) {
+        margin-top: 15px;
+    }
+    .google-logo {
+        width: 100px;
+        margin-bottom: $global-margin;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+    button {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+}

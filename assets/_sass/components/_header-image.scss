@@ -1,0 +1,25 @@
+.header-image-container {
+    background-position: center center;
+    background-size: cover;
+    height: 210px;
+    margin-bottom: $global-margin;
+
+    @include breakpoint(medium) {
+        height: 320px;
+    }
+
+    .grid-x,
+    .grid-y {
+        height: 100%;
+
+        .cell {
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+}

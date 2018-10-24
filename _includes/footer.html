@@ -1,37 +1,62 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<footer>
+    <div class="grid-container ">
+        <div class="grid-x search-social">
+            <div class="cell medium-6">
+                <h3>Search the Watson Website</h3>
+                <form action="https://www.google.com/search" class="searchform input-group" method="get" name="searchform"
+                    target="_blank">
+                    <input name="sitesearch" type="hidden" value="http://watson-inc.com">
+                    <input autocomplete="on" class="form-control search input-group-field" name="q" placeholder="Search the Watson Website on Google"
+                        required="required" type="text">
+                    <div class="input-group-button">
+                        <input type="submit" class="button" value="Submit">
+                    </div>
+                </form>
+            </div>
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="grid-x grid-padding-x">
+            <div class="cell medium-6 locations">
+                <h3>Watson Locations</h3>
+                <ul>
+                    <li><a href="west-haven.html">West Haven, CT</a></li>
+                    <li><a href="orange.html">Orange, CT</a></li>
+                    <li><a href="taylorville.html">Taylorville, IL</a></li>
+                </ul>
+            </div>
+            <div class="cell medium-6">
+                <div class="grid-x social-links">
+                    <div class="cell">
+                        <h3>Follow us</h3>
+                    </div>
+                    <div class="cell medium-6 ">
+                        <div class="social-links-container">
+                            <h5>Watson Inc.</h5>
+                            <a href="https://www.facebook.com/YourWatson/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/watsonnews"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/watson_inc/"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/watson-inc/"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="cell medium-6">
+                        <div class="social-links-container">
+                            <h5>Edible Glitter</h5>
+                            <a href="https://www.facebook.com/watsonedibleglitter/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/edibleglitter?lang=en"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/watsonedibleglitter/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="grid-x grid-padding-x">
+            <div class="cell">
+                <p class="small"><strong>Confidential Notice:</strong> The contents of this site are confidential and
+                    intended for internal use only.</p>
+            </div>
+        </div>
     </div>
-
-  </div>
-
 </footer>
 
-<script src="{{ "/assets/js/bundle.js" | relative_url }}" type="text/javascript"></script>

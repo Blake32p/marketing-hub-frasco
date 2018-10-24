@@ -1,0 +1,22 @@
+.word-around-watson {
+    .cell {
+        ul {
+            
+            margin-left: 0px;
+            list-style: none;
+            li {
+                display: inline;
+                margin-right: $global-margin;
+                width: 75px;
+                height: 75px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                img {
+                    width: inherit;
+                    height: inherit;
+                }
+            }
+        }
+    }
+}

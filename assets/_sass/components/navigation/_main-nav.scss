@@ -1,0 +1,133 @@
+$app-dashboard-top-nav-height: rem-calc(55);
+$scrollhide-nav-transition-speed: 1s;
+
+// .app-dashboard-top-nav-bar {
+//   height: $app-dashboard-top-nav-height;
+//   width: 100%;
+//   flex: 0 0 $app-dashboard-top-nav-height;
+// }
+
+.scrollhide-nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  transition: transform $scrollhide-nav-transition-speed cubic-bezier(0.86, 0, 0.07, 1);
+  z-index: 9999;
+
+  &.hidden {
+    transform: translateY(-100%);
+  }
+}
+
+.title-bar {
+  background-color: $white;
+  box-shadow: 0 3px 8px rgba($dark-gray, .2);
+
+  .menu-text {
+    .navbar-brand {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 0 5px 5px;
+
+      svg {
+        fill: $primary-color;
+        width: 100px;
+        margin-right: 7px;
+      }
+    }
+  }
+
+  .menu-icon {
+    &::after {
+      background: $secondary-color;
+      box-shadow: 0 7px 0 $secondary-color, 0 14px 0 $secondary-color;
+    }
+  }
+
+  .how-to-text {
+    margin-left: $global-margin;
+  }
+}
+
+.top-bar {
+  background-color: $white;
+  box-shadow: 0px 4px 8px rgba($dark-gray, 0.2);
+
+  .top-bar-left {
+    .menu {
+      background-color: $white;
+
+      .menu-text {
+        padding: 0;
+
+        .navbar-brand {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px 0 5px 5px;
+
+          svg {
+            fill: $primary-color;
+            width: 100px;
+            margin-right: 7px;
+          }
+
+          span {}
+        }
+      }
+
+      .nav_main-link {
+        font-weight: $global-weight-bold;
+        border-bottom: 1px solid rgba($dark-gray, 0.1);
+        // &:last-child {
+        //   border-bottom: none;
+        // }
+      }
+
+      .is-accordion-submenu-parent {
+
+        .is-submenu-item,
+        .is-accordion-submenu-item,
+        .is-accordion-submenu {
+          a {
+            font-weight: $global-weight-normal;
+            margin-left: $global-margin;
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav-watson-text {
+  font-weight: $global-weight-bold;
+}
+
+.nav-start-text {
+  color: $secondary-color;
+  font-weight: $global-weight-bold;
+  font-style: italic;
+}
+
+.no-js {
+  @include breakpoint(small only) {
+    .top-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .title-bar {
+      display: none;
+    }
+  }
+}
+
+.how-to-text {
+  font-size: 80%;
+  font-weight: $global-weight-bold;
+  margin-right: $global-margin;
+}

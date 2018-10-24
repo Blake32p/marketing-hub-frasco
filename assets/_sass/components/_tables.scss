@@ -1,0 +1,38 @@
+table {
+    border-radius: $global-radius;
+    border: 1px solid $light-gray;
+    &:hover {
+        tbody {
+            tr {
+                &:hover {
+                    background-color: rgba($secondary-color, 0.1);
+                }
+            }
+        }
+    }
+    thead {
+        border-radius: $global-radius;
+        border: none;
+        background-color: rgba($medium-gray, .3);
+        tr {
+            border: none;
+            th {
+                // color: $secondary-color;
+                font-weight: $global-weight-bold;
+
+            }
+        }
+    }
+    tbody {
+        border: none;
+        tr {
+            border: none;
+            &:last-child {
+                border: none;  
+            td {
+                
+                }
+            }
+        }
+    }
+}

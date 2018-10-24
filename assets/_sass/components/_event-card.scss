@@ -1,0 +1,55 @@
+.custom-card,
+.event-card {
+    border: 0px;
+    box-shadow: $global-card-shadow;
+    &:hover, &:focus {
+        transition: box-shadow 0.5s ease;
+        box-shadow: $global-card-shadow-hover;
+    }
+    .left-image {
+        background-size: cover; 
+        background-position: center center;
+    }
+    .subtext {
+        margin-top: -.3rem;
+        color: $dark-gray;
+        font-weight: 700;
+        font-size: 90%;
+    }
+    .link {
+
+    }
+    .more-info {
+        border-radius: 1000px;
+        width: 50px;
+        height: 50px;
+        // background-color: red;
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        a {
+            width: 100%;
+            height: 100%;
+            // radius: 1000%;
+        }
+    }
+    .card-section {
+        position: relative;
+    }
+}
+// .event-card,
+// .horizontal-event-card {
+//     .title {
+
+//     }
+//     .subtext {
+//         margin-top: -.3rem;
+//         color: $dark-gray;
+//         font-weight: 700;
+//     }
+// }
+// .event-card {
+//     .header-image {
+//         border-radius: $global-radius;
+//     }
+// }

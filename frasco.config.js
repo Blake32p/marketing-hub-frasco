@@ -3,7 +3,7 @@ module.exports = {
 
   tasks: {
     browsersync: true,
-    eslint:      true,
+    eslint:      false,
     imagemin:    true,
     sass:        true,
     watch:       true,
@@ -35,7 +35,7 @@ module.exports = {
 
   imagemin: {
     src:         '_images',
-    dest:        'images',
+    dest:        'img',
     progressive: true,
     svgoPlugins: [{removeViewBox: false}],
   },
