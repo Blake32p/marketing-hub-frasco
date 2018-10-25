@@ -1,26 +1,27 @@
 ---
 layout: default
 ---
+<div class="grid-container post-list-container">
+	<div class="grid-x grid-margin-y grid-padding-y">
+		<div class="cell">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/71TN8NTtNBU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<div class="cell medium-8">
+			<h1 class="page-heading">Posts</h1>
+			<ul class="post-list">
+				{% for post in site.posts %}
+				{% if post.categories contains 'morningreports' %}
 
-<div class="home">
+				<li>
+					<h2>
+						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+					</h2>
+				</li>
+				{% endif %}
+				{% endfor %}
+			</ul>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-    {% if post.categories contains 'morningreports' %}
-
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+			<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+		</div>
+	</div>
 </div>
