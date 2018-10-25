@@ -39,3 +39,7 @@ F080676- should be done today
 **Date changes**:
 
 No date changes
+
+___ 
+
+**[<i class="fas fa-chevron-left"></i>](/morningreports/index.html) Back to  [Morning Reports List](/morningreports/index.html "Morning Reports")**
