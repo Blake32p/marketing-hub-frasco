@@ -21,6 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://watstart.watson-inc.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: watsonnews
 github_username:  blake32p
+brand: Watson Inc.
 
 # Build settings
 markdown: kramdown
