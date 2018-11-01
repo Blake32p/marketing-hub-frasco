@@ -63,7 +63,3 @@ Healthy Choice – Raw Material pending
 F080785 – was over sprayed, hold tentative
 
 Tentative BRC date for Taylorville on May 14
-
-___ 
-
-**[<i class="fas fa-chevron-left"></i>](/morningreports/index.html) Back to  [Morning Reports List](/morningreports/index.html "Morning Reports")**

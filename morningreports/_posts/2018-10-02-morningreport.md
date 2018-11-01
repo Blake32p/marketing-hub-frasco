@@ -61,7 +61,3 @@ Listeria positive in Orange A/C vent- Quality will be investigating
 
 Pushed Out - F080018, Relax-a-dough, Healthy Choice Blend, Mg Citrate 20%
 Granular
-
-___ 
-
-**[<i class="fas fa-chevron-left"></i>](/morningreports/index.html) Back to  [Morning Reports List](/morningreports/index.html "Morning Reports")**

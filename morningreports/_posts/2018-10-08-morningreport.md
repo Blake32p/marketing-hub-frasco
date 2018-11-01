@@ -59,7 +59,3 @@ into it.
 
 F080717 – Batch 10, metal was found. Need to check batch 9 if there was metal in
 that batch.
-
-___ 
-
-**[<i class="fas fa-chevron-left"></i>](/morningreports/index.html) Back to  [Morning Reports List](/morningreports/index.html "Morning Reports")**

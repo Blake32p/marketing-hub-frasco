@@ -49,7 +49,3 @@ F080797 – micro 10/5
 **Date Changes**
 
 Nature’s product order – looking for alternative zinc
-
-___ 
-
-**[<i class="fas fa-chevron-left"></i>](/morningreports/index.html) Back to  [Morning Reports List](/morningreports/index.html "Morning Reports")**

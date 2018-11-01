@@ -52,7 +52,3 @@ confirmed.
 **Date changes**:
 
 Access Business – F072914 – moved date
-
-___ 
-
-**[<i class="fas fa-chevron-left"></i>](/morningreports/index.html) Back to  [Morning Reports List](/morningreports/index.html "Morning Reports")**

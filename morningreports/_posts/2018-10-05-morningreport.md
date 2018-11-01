@@ -53,7 +53,3 @@ F072684 – 10/9 Micro
 F080062 – failed coliform
 
 F069691 – micro Monday
-
-___ 
-
-**[<i class="fas fa-chevron-left"></i>](/morningreports/index.html) Back to  [Morning Reports List](/morningreports/index.html "Morning Reports")**

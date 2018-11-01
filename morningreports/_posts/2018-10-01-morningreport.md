@@ -46,7 +46,3 @@ F080145 FL36231 – pending NCR
 Taylorville need batch sheet for Ascorbic Acid Organic F600098
 
 Minren to work with maintenance on lab hood
-
-___ 
-
-**[<i class="fas fa-chevron-left"></i>](/morningreports/index.html) Back to  [Morning Reports List](/morningreports/index.html "Morning Reports")**
