@@ -2,7 +2,7 @@
 layout: post
 title: "October 1, 2018"
 date: 2018-10-01 09:30:00 +0400
-categories: morningreports
+categories: [morningreports, October-2018] 
 ---
 
 # Morning Notes 10/1/18
