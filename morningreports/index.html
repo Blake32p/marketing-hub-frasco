@@ -3,13 +3,14 @@ layout: default
 title: Morning Reports
 ---
 <div class="grid-container post-list-container">
-	<div class="grid-x grid-margin-y grid-padding-y">
+	<div class="grid-x grid-margin-y">
+		<div class="cell">
+				<h1 class="page-heading text-center" style="padding-top: 36px;">Recent Morning Reports</h1>
+		</div>
 		<div class="cell medium-8">
-			<h1 class="page-heading">Recent Morning Reports</h1>
 			<ul class="post-list">
 				{% for post in site.posts %}
 				{% if post.categories contains 'morningreports' %}
-
 				<li>
 					<h2>
 						<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -18,10 +19,38 @@ title: Morning Reports
 				{% endif %}
 				{% endfor %}
 			</ul>
-
 			<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-			
+		</div>
+		<div class="cell medium-4 sidebar">
+			<div class="archive-list">
+				<h3>Archive</h3>
+				<!-- <h5>2018</h5> -->
+				<ul>
+					<li>
+						<a href="/morningreports/archive/november-2018.html">November 2018</a>
+					</li>
+					<li>
+						<a href="/morningreports/archive/october-2018.html">October 2018</a>
+					</li>
+				</ul>
+				<!-- <ul class="accordion" data-accordion>
+				<li class="accordion-item is-active" data-accordion-item>
+					<a href="#" class="accordion-title">2018</a>
+					<div class="accordion-content" data-tab-content>
+						<a href="/morningreports/archive/october-2018.html">October 2018</a>
+					</div>
+					<div class="accordion-content" data-tab-content>
+						<a href="/morningreports/archive/november-2018.html">November 2018</a>
+					</div>
+				</li>
+				<li class="accordion-item" data-accordion-item>
+					<a href="#" class="accordion-title">2017</a>
+					<div class="accordion-content" data-tab-content>
+						<a href="/morningreports/archive/december-2017.html">October 2017</a>
+					</div>
+				</li>
+			</ul> -->
+			</div>
 		</div>
 	</div>
 </div>

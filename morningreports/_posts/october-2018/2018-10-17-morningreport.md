@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: morningreportspost
 title:  "October 17, 2018"
 date:   2018-10-17 09:30:00 +0400
-categories: morningreports
+categories: [morningreports, October-2018] 
 ---
 # Morning Notes 10/17/18
 
@@ -39,7 +39,3 @@ F080676- should be done today
 **Date changes**:
 
 No date changes
-
-___ 
-
-**[<i class="fas fa-chevron-left"></i>](/morningreports/index.html) Back to  [Morning Reports List](/morningreports/index.html "Morning Reports")**

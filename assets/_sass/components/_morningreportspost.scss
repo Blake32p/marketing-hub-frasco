@@ -1,0 +1,9 @@
+.morningreportspost {
+    margin-top: $global-margin*3;
+    p {
+        strong {
+            display: inline-block;
+            padding-top: $global-margin*1.5; 
+        }
+    }
+}

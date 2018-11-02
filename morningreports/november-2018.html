@@ -1,0 +1,23 @@
+---
+layout: default
+title: November Morning Reports
+permalink: /morningreports/archive/november-2018.html
+---
+<div class="grid-container post-list-container">
+	<div class="grid-x grid-margin-y grid-padding-y">
+		<div class="cell medium-8">
+			<h1 class="page-heading">November 2018 Posts</h1>
+			<ul class="post-list">
+                    {% for post in site.categories.November-2018 %}
+                <li>
+                    <h2>
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                </li>
+                {% endfor %}
+            </ul>
+            <hr>
+            <p><Strong>Back to <a href="/morningreports/index.html">Recent Morning Reports</a></Strong></p>
+        </div>
+    </div>
+</div>

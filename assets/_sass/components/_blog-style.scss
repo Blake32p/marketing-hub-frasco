@@ -11,3 +11,14 @@
         }
     }
 }
+
+.archive-list {
+    @include breakpoint(medium) {
+        // margin-top: $global-margin;
+      }
+    ul {
+        li {
+            list-style-type: none;
+        }
+    }
+}

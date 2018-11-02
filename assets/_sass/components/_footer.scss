@@ -27,7 +27,7 @@ footer {
       li {
         list-style-type: none;
         @include breakpoint(medium) {
-          list-style-type: disc;
+          list-style-type: none;
         }
         a {
           color: $white;

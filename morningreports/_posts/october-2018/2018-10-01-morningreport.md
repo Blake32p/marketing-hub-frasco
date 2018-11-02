@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: morningreportspost
 title: "October 1, 2018"
 date: 2018-10-01 09:30:00 +0400
 categories: [morningreports, October-2018] 
