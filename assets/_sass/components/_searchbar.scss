@@ -5,6 +5,10 @@
     @include breakpoint(medium) {
         margin-top: 15px;
     }
+    @media (prefers-color-scheme: dark) {
+          color: #ddd;
+          background-color: $dark-black-2;
+      }
     .google-logo {
         width: 100px;
         margin-bottom: $global-margin;

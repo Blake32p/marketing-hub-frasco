@@ -1,8 +1,6 @@
 body {
     @media (prefers-color-scheme: dark) {
-        body {
-          color: #ddd;
-          background: #1D1E1F;
-        }
+          color: $white;
+          background: $dark-black;
       }
 }
