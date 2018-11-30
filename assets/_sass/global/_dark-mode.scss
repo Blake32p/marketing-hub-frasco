@@ -4,3 +4,6 @@ body {
           background: $dark-black;
       }
 }
+
+$dm-white: $white;
+$dm-white-hover: darken($white, 20);

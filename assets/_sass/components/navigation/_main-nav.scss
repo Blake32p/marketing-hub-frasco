@@ -146,4 +146,13 @@ $scrollhide-nav-transition-speed: 1s;
   font-size: 80%;
   font-weight: $global-weight-bold;
   margin-right: $global-margin;
+  @media (prefers-color-scheme: dark) {
+    a {
+      color: white;
+      &:hover {
+        color: $dm-white-hover;
+      }
+    }
+}
+
 }

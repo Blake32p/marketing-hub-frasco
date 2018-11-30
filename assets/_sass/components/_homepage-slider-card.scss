@@ -3,6 +3,11 @@
     border: none;
     margin-right: 10px;
     margin-left: 10px;
+    @media (prefers-color-scheme: dark) {
+        color: $white;
+        background: $dark-black;
+        box-shadow: $global-card-shadow-dm;
+    }
     .card-image {
         width: 100%; 
         height: 150px; 

@@ -2,6 +2,11 @@
 .event-card {
     border: 0px;
     box-shadow: $global-card-shadow;
+    @media (prefers-color-scheme: dark) {
+        color: $white;
+        background: $dark-black;
+        box-shadow: $global-card-shadow-dm;
+    }
     &:hover, &:focus {
         transition: box-shadow 0.5s ease;
         box-shadow: $global-card-shadow-hover;

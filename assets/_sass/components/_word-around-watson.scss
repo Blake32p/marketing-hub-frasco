@@ -1,21 +1,47 @@
 .word-around-watson {
     .cell {
         ul {
-            
             margin-left: 0px;
             list-style: none;
             li {
-                display: inline;
+                display: inline-block;
                 margin-right: $global-margin;
-                width: 75px;
+                width: auto;
                 height: 75px;
+                border-radius: 1000px;
+                &:hover {
+                    box-shadow: $global-card-shadow-hover;
+                }
                 &:last-child {
                     margin-right: 0;
                 }
                 img {
                     width: inherit;
                     height: inherit;
+
                 }
+            }
+        }
+    }
+}
+
+.reveal {
+    h1, h2, h3, h4, h5 {
+        color: $primary-color;
+    }
+    p {
+        color: $black;
+    }
+    @media (prefers-color-scheme: dark) {
+        background-color: $dark-black;
+        border: 1px solid $dark-black;
+        box-shadow: $global-card-shadow-hover;
+        p {
+            color: $white;
+        }
+        .close-button {
+            svg {
+                filter: drop-shadow(0 4px 8px $black);
             }
         }
     }
