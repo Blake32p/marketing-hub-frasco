@@ -1,15 +1,29 @@
 .tabs {
     border-top-left-radius: $global-radius;
     border-top-right-radius: $global-radius;
+    @media (prefers-color-scheme: dark) {
+        background-color: $dark-black-2;
+    }
     .tabs-title {
         font-weight: $global-weight-bold;
-        color: $secondary-color;
+        color: $secondary-color;    
+        a[aria-selected='true'] {
+            @media (prefers-color-scheme: dark) {
+                background: $white;
+            }
+        }
         a {
             font-size: $global-font-size;
+            @media (prefers-color-scheme: dark) {
+                background: $dark-black;
+            }
         }
     }
 }
 .tabs-content {
     border-bottom-left-radius: $global-radius;
     border-bottom-right-radius: $global-radius;
+    @media (prefers-color-scheme: dark) {
+        background-color: $dark-black-2;
+    }
 }

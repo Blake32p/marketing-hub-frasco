@@ -33,7 +33,12 @@
             background-position: center center;
             height: 80px;
             border-radius: $global-radius;
-
+            transition: box-shadow 10.10s;
+            &:hover {
+                box-shadow: $global-card-shadow-hover;
+                
+                
+            }
             @include breakpoint(medium) {
                 height: 150px;
             }

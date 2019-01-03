@@ -9,16 +9,25 @@
                 width: auto;
                 height: 75px;
                 border-radius: 1000px;
+                box-shadow: $global-card-shadow;
                 &:hover {
                     box-shadow: $global-card-shadow-hover;
                 }
                 &:last-child {
                     margin-right: 0;
                 }
+                @media (prefers-color-scheme: dark) {
+                    box-shadow: $global-card-shadow-dm;
+                }
                 img {
                     width: inherit;
                     height: inherit;
+                    // box-shadow: $global-card-shadow;
+                    // -webkit-filter: drop-shadow(5px 5px 5px #222);
+                    // filter: drop-shadow(5px 5px 5px #222);
+                    // &:hover {
 
+                    // }
                 }
             }
         }
