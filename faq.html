@@ -3,7 +3,7 @@ layout: default
 meta-title: faq
 title: frequently Asked Questions
 ---
-<div class="grid-container header-image-container" style="background-color: #3773B9;">
+<div class="grid-container header-image-container" style="background-color: #3773B9;" id="header">
     <div class="grid-x">
         <div class="cell">
             <h1>FAQ</h1>
@@ -11,17 +11,21 @@ title: frequently Asked Questions
         </div>
     </div>
 </div>
-<div class="grid-container">
-    <div class="grid-x grid-margin-x grid-padding-y grid-padding-x grid-margin-y">
-        <div class="cell medium-4">
-            <h4>Sections</h4>
-            <ul>
-                <li><a href="#company">Company</a></li>
-                <li><a href="#quality">Quality</a></li>
-                <li><a href="#it">IT</a></li>
-            </ul>
+<div class="grid-container" id="contents">
+    <div class="grid-x grid-margin-x grid-padding-y grid-padding-x grid-margin-y" >
+        <div class="cell medium-4 large-3">
+            <div class="grid-x" data-sticky-container>
+                <div class="cell sticky" data-sticky data-top-anchor="contents:top" data-btm-anchor="contents:bottom" data-options="marginTop:0;">
+                        <h4>Sections</h4>
+                        <ul>
+                            <li><a href="#company">Company</a></li>
+                            <li><a href="#quality">Quality</a></li>
+                            <li><a href="#it">IT</a></li>
+                        </ul>
+                </div>
+            </div>
         </div>
-        <div class="cell medium-8">
+        <div class="cell medium-8 large-9">
             <div class="grid-y grid-margin-y">
                 <div class="cell" id="company">
                     <h3>What is the Watson mission statement?</h3>
@@ -55,15 +59,22 @@ title: frequently Asked Questions
                     <h3>What year was Watson founded?</h3>
                     <p>Watson was founded in 1939</p>
                 </div>
+                <div>
+                    <hr />
+                </div>
                 <div class="cell" id="quality">
                     <h3>What is the company quality policy?</h3>
                     <p>At Watson, we are committed to:</p>
+                    
                     <ul>
                         <li>Continual improvement</li>
                         <li>Meeting our Customer's Needs</li>
                         <li>Providing Exceptional Service</li>
                         <li>Producing Safe, Legal, and Quality Products</li>
                     </ul>
+                </div>
+                <div>
+                    <hr />
                 </div>
                 <div class="cell" id="it">
                     <h3>How can I request help from the IT department</h3>

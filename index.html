@@ -84,6 +84,7 @@ title: Homepage
 							<ul>
 								<li class="more-info" data-open="jim-modal"><img src="./assets/img/circle-headshots/jim-oval-headshot.png"></li>
 								<li class="more-info" data-open="don-modal"><img src="./assets/img/circle-headshots/don-sasek-headshot.png"></li>
+								<li class="more-info" data-open="weather-modal"><img src="./assets/img/circle-headshots/don-sasek-headshot.png"></li>
 								<!-- <li class="more-info" data-open="jim-modal"><img src="./assets/img/circle-headshots/jim-oval-headshot.png"></li> -->
 							</ul>
 						</div>
@@ -211,20 +212,18 @@ title: Homepage
 		<div class="cell large-4">
 			<div class="grid-x grid-margin-x grid-margin-y">
 				<div class="cell medium-6 large-12">
+					<h4>BRC Countdown</h4>
+					<p class="text-center"><strong>West Haven BRC Audit</strong><br>
+					<span id="wh-brc"></span></p>
+					<p class="text-center"><strong>Taylorville BRC Audit</strong><br>
+					<span id="tay-brc"></span></p>
+				</div>
+				<div class="cell medium-6 large-12">
 					<h4>Links</h4>
 					<ul>
 						<li><a href="morning-cup.html">The Morning Cup</a></li>
 						<li><a href="/morningreports/index.html">Morning Reports</a></li>
 						<li><a href="/faq.html">Watson FAQ</a></li>
-						<li><a href="https://www.youtube.com/user/YourWatsonVideo/">Youtube Videos</a></li>
-					</ul>
-				</div>
-				<div class="cell medium-6 large-12">
-					<h4>Business Links</h4>
-					<ul>
-						<li><a href="https://login.salesforce.com/">Salesforce Login</a></li>
-						<li><a href="http://sql-srv-17/Reports/browse/">Report Server</a></li>
-						<!-- <li><a href="file://R\Nutritio/Specs">R/Nutrio/specs</a></li> -->
 					</ul>
 				</div>
 				<div class="cell medium-6 large-12">
@@ -240,8 +239,18 @@ title: Homepage
 						<li>
 							<a href="https://www.watson-inc.com/about-us/industry-events/">Tradeshow Dates <i class="fal fa-external-link"></i></a>
 						</li>
+						<li><a href="https://www.youtube.com/user/YourWatsonVideo/">Youtube Videos <i class="fal fa-external-link"></i></a></li>
 					</ul>
 				</div>
+				<div class="cell medium-6 large-12">
+						<h4>Business Links</h4>
+						<p class="small">Not all employees have access to these services</p>
+						<ul>
+							<li><a href="https://login.salesforce.com/">Salesforce Login <i class="fal fa-external-link"></i></a></li>
+							<li><a href="http://sql-srv-17/Reports/browse/">Report Server <i class="fal fa-external-link"></i></a></li>
+							<!-- <li><a href="file://R\Nutritio/Specs">R/Nutrio/specs</a></li> -->
+						</ul>
+					</div>
 				<div class="cell medium-6 large-12">
 					<h4>Newsletters</h4>
 					<a href="/assets/newsletters/nov-dec_2018_newsletter.pdf"><img src="/assets/img/newsletter-header-image.jpg"
@@ -483,12 +492,77 @@ title: Homepage
 
 <div class="reveal" id="don-modal" data-reveal>
 	<div class="reveal-content">
-		<h4>BRC Audit</h4>
-		<p>BRC Audit Date</p>
-		<h4>Upcoming Audits</h4>
-		<p>Audit Dates</p>
+		<h4>BRC Audits</h4>
+		<p><strong>West Haven</strong> March 12-14</p>
+		<p><strong>Taylorville</strong> May 14-16</p>
 	</div>
 	<button class="close-button" data-close aria-label="Close modal" type="button">
 		<span aria-hidden="true"><i class="fal fa-times"></i></span>
 	</button>
 </div>
+
+<!-- Display the countdown timer in an element -->
+
+<!-- West Haven BRC Audit Countdown Script -->
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("mar 12, 2019 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("wh-brc").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("wh-brc").innerHTML = "Audit Day!";
+  }
+}, 1000);
+</script>
+
+<!-- TaylorvilleBRC Audit Countdown Script -->
+<script>
+		// Set the date we're counting down to
+		var countDownDate2 = new Date("may 14, 2019 08:00:00").getTime();
+		
+		// Update the count down every 1 second
+		var x = setInterval(function() {
+		
+		  // Get todays date and time
+		  var now = new Date().getTime();
+		
+		  // Find the distance between now and the count down date
+		  var distance = countDownDate2 - now;
+		
+		  // Time calculations for days, hours, minutes and seconds
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+		  // Display the result in the element with id="demo"
+		  document.getElementById("tay-brc").innerHTML = days + "d " + hours + "h "
+		  + minutes + "m " + seconds + "s ";
+		
+		  // If the count down is finished, write some text 
+		  if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("tay-brc").innerHTML = "Audit Day!";
+		  }
+		}, 1000);
+		</script>
