@@ -33,7 +33,7 @@
             background-position: center center;
             height: 80px;
             border-radius: $global-radius;
-            transition: box-shadow 10.10s;
+            transition: box-shadow 0.08s ease;
             &:hover {
                 box-shadow: $global-card-shadow-hover;
                 
