@@ -1,0 +1,71 @@
+---
+layout: default
+meta-title: CAT Tactical Scorecard
+title: CAT Tactical Scorecard
+---
+
+
+<div class="grid-container large-margin-top">
+	<div class="grid-x">
+		<div class="cell">
+			<h1>CAT Scorecard</h1>
+		</div>
+	</div>
+</div>
+<div class="grid-container">
+	<div class="grid-x grid-margin-x">
+		<h2>
+			1) Strengthen CAT Commitment
+		</h2>
+	</div>
+	<div class="grid-x grid-margin-x">
+		<div class="cell medium-6 large-4">
+			<h3>Attendance</h3>
+			<p>NMT 3 Absences<br>7+ at a meeting</p>
+			<form accept="application/json">
+				<input type="radio" name="Attendance Bad" value="Bad"> Bad<br>
+				<input type="radio" name="Attendance neutral" value="Ehh"> Ehh<br>
+				<input type="radio" name="Attendance Good" value="Great!"> Great!<br>
+			</form>
+		</div>
+		<div class="cell medium-6 large-4">
+			<h3>5S Audits</h3>
+			<p>min 5 visits/month</p>
+			<form accept="application/json">
+				<input type="radio" name="52 Bad" value="Bad"> Bad<br>
+				<input type="radio" name="52 neutral" value="Ehh"> Ehh<br>
+				<input type="radio" name="52 Good" value="Great!"> Great!<br>
+			</form>
+		</div>
+		<div class="cell medium-6 large-4">
+			<h3>1 Leadership speaker</h3>
+		</div>
+		<div class="cell medium-6 large-4">
+			<h3>CAT Morale</h3>
+			<p>Is it good, or maybe not so good?</p>
+		</div>
+	</div>
+</div>
+
+<form id="form1">
+	First name:<br>
+	<input type="text" id="firstname1"><br>
+	Last name:<br>
+	<input type="text" id="lastname1">
+</form>
+
+<form id="form2">
+	First name:<br>
+	<input type="text" id="firstname2"><br>
+	Last name:<br>
+	<input type="text" id="lastname2">
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$("#form1").submit();
+		$("#form2").submit();
+	});
+
+</script>
